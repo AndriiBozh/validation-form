@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+#confirmation-form {
+  margin-top: 100px;
+}
+
+.form-element {
+  margin-bottom: 10px;
+}
+
+.form-element input {
+  padding: 5px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+}
+
+.terms {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.terms input {
+  margin-right: 4px;
+}
+
+.create-account-submit-btn {
+  text-align: center;
+  margin: 20px;
+}
+
+.create-account-submit-btn button {
+  padding: 10px 20px;
+}
+
+.confirmation-errors {
+  opacity: 0;
+  background-color: rgb(238, 229, 233);
+  padding: 20px;
+  transition: opacity 1s;
+  margin: 20px;
+  border: 2px solid rgb(36, 123, 160);
+  border-radius: 5px;
+}
+
+.errors-list {
+  padding-left: 10px;
+  color: rgb(251, 54, 64);
+}
+
+li {
+  padding: 0 10px;
+}
+
+/* add margin to all list elements but the last one */
+li:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.hide-error {
+  display: none;
+}
+
+.welcome-window {
+  opacity: 0;
+  transition: opacity 1s;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgb(91, 140, 90);
+  color: rgb(238, 241, 189);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 50px;
+  border: 1px solid rgb(82, 50, 73);
+}
+
+.welcome-window button {
+  padding: 5px 15px;
+  margin: 10px;
+  background-color: rgb(237, 235, 160);
+  border: 1px solid rgb(69, 54, 67);
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 1s ease-in-out 1s;
+}

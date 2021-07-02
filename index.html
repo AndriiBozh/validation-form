@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Validation Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="welcome-window" id="welcome-window">
+        Your account has been successfully created. <br />Welcome,
+        <span id="insert-username"></span>! <br />
+        <button id="close-welcome-window">OK</button>
+      </div>
+      <div class="confirmation-errors" id="confirmation-errors">
+        <ul class="errors-list">
+          <li id="username-error">Username must begin with a letter</li>
+          <li id="password-length-error">
+            Password must be at least 8 characters long
+          </li>
+          <li id="confirm-password-error">Passwords do not match</li>
+          <li id="terms-checkbox-error">Terms must be accepted</li>
+        </ul>
+      </div>
+      <!-- <div class="confirmation-container"> -->
+      <form action="" id="confirmation-form">
+        <div class="form-element">
+          <label for="username">Username</label>
+          <input type="text" id="username" />
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" id="password" />
+        </div>
+        <div class="form-element">
+          <label for="confirm-password">Confirm password</label>
+          <input type="password" id="confirm-password" />
+        </div>
+        <div class="form-element terms">
+          <label for="accept-terms">
+            <input type="checkbox" id="accept-terms" />
+            Accept our terms</label
+          >
+        </div>
+        <div class="create-account-submit-btn">
+          <button type="submit" id="create-account-btn">Create Account</button>
+        </div>
+      </form>
+      <!-- </div> -->
+    </div>
+  </body>
+</html>
